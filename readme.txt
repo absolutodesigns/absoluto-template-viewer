@@ -1,82 +1,88 @@
-=== Absoluto Template Viewer ===
-Contributors: absolutodesigns
-Tags: template, theme, debug, developer, admin-bar
-Requires at least: 5.0
-Tested up to: 7.0
-Requires PHP: 7.0
-Stable tag: 1.0.0
-License: GPLv2 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
+# Absoluto Template Viewer
 
-Instantly see which template is active on the current page, plus environment/debug status and related included files from the front-end admin bar.
+> Instantly see which template is active on the current page — plus environment/debug status and related included files — right from the front-end admin bar.
 
-== Description ==
+![WordPress](https://img.shields.io/badge/WordPress-5.0%2B-blue?logo=wordpress) ![PHP](https://img.shields.io/badge/PHP-7.0%2B-777BB4?logo=php) ![License](https://img.shields.io/badge/License-GPLv2%2B-green) ![Version](https://img.shields.io/badge/Stable-1.0.0-brightgreen)
 
-**Absoluto Template Viewer** is a lightweight developer utility for WordPress.
-It adds a front-end admin bar panel that helps you understand exactly what template file is being used and what related files are included.
+---
 
-This is especially useful when debugging theme behavior, overrides, child themes, and complex template loading.
+## Overview
 
-### What you can see at a glance
+**Absoluto Template Viewer** is a lightweight developer utility for WordPress. It adds a front-end admin bar panel that helps you understand exactly what template file is being used and what related files are included.
 
-* **Template file + source** (theme/plugin/mu-plugin/core)
-* **Copy full path** action for quick debugging
-* **Page/Post/Object ID** (when available)
-* **Theme name** and **Child theme: YES/NO** status
-* **Environment badge**: LOCAL / STAGING / LIVE
-* **Debug mode status**: ON / OFF
-* **Related Included Files** list with copy support
-* **Settings gear shortcut** and plugin action link
-* **Role-based visibility control**
+Especially useful when debugging theme behavior, overrides, child themes, and complex template loading.
 
-### Built for clean workflow
+---
 
-* Front-end only output (no admin clutter)
-* Fast local processing (no external API dependency)
-* Clipboard helper with fallback behavior
-* Safe output escaping and WordPress standards-friendly structure
+## Features
 
-Use **Settings > Current Template** to choose who can view the panel.
+| Feature | Details |
+|---|---|
+| 🗂 **Template file + source** | Shows theme / plugin / mu-plugin / core origin |
+| 📋 **Copy full path** | One-click copy for quick debugging |
+| 🔢 **Page/Post/Object ID** | Displayed when available |
+| 🎨 **Theme info** | Theme name and child theme status (YES/NO) |
+| 🌍 **Environment badge** | LOCAL / STAGING / LIVE |
+| 🐛 **Debug mode status** | ON / OFF |
+| 📎 **Related Included Files** | Full list with individual copy support |
+| ⚙️ **Settings shortcut** | Gear icon links directly to plugin settings |
+| 👥 **Role-based visibility** | Control who sees the panel |
 
-== Installation ==
+---
 
-1. Upload the plugin folder to `/wp-content/plugins/`, or install through the WordPress Plugins screen.
+## Installation
+
+1. Upload the plugin folder to `/wp-content/plugins/`, or install via **Plugins → Add New** in your WordPress dashboard.
 2. Activate **Absoluto Template Viewer** from the Plugins screen.
-3. Go to **Settings > Current Template**.
-4. Select the user roles that can view template details.
-5. Open any front-end page while logged in and use the admin bar panel.
+3. Navigate to **Settings → Current Template**.
+4. Select the user roles that should be able to view the panel.
+5. Open any front-end page while logged in — the admin bar panel will be visible.
 
-== Frequently Asked Questions ==
+---
 
-= Why is the panel visible only on the front-end? =
+## FAQ
 
-Template resolution primarily applies to front-end requests. The plugin is intentionally focused there.
+**Why is the panel only visible on the front-end?**  
+Template resolution primarily applies to front-end requests. The plugin is intentionally scoped there to stay out of the way.
 
-= Who can access template details? =
+**Who can see the template details?**  
+Only logged-in users whose roles are enabled in **Settings → Current Template**.
 
-Only logged-in users whose roles are enabled in plugin settings.
+**Can I copy file paths from the included files list?**  
+Yes. Click **Copy full path** or any file row to copy its absolute path to your clipboard.
 
-= Can I copy file paths from the list? =
+**Does this plugin send site data to third parties?**  
+No. Everything runs locally. No telemetry is collected or transmitted.
 
-Yes. Click **Copy full path** or any file row to copy its absolute path.
+---
 
-= Does this plugin send site data to third parties? =
+## Requirements
 
-No. The plugin works locally and does not send telemetry.
+- WordPress 5.0 or higher (tested up to 7.0)
+- PHP 7.0 or higher
 
-= Where can I support development? =
+---
 
-Use the support link on the settings page:
-[https://buymeacoffee.com/absoluto](https://buymeacoffee.com/absoluto)
+## Changelog
 
-== Changelog ==
+### 1.0.0
+- Initial public release
+- Front-end admin bar template inspector
+- Role-based visibility settings
+- Environment and debug mode indicators
+- Related included files listing with copy support
+- Settings shortcut and plugin action link
 
-= 1.0.0 =
+---
 
-* Initial public release.
-* Front-end admin bar template inspector.
-* Role-based visibility settings.
-* Environment and debug mode indicators.
-* Related included files listing with copy support.
-* Settings shortcut and plugin action link.
+## License
 
+Licensed under the [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html).
+
+---
+
+## Support Development
+
+If this plugin saves you time, consider buying me a coffee ☕
+
+👉 [buymeacoffee.com/absoluto](https://buymeacoffee.com/absoluto)
